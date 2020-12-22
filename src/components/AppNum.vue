@@ -1,5 +1,5 @@
 <template>
-   <canvas class="canvas" id="cv3" ref="canv3" :width="width*0.6" :height="height"></canvas>
+   <canvas class="canvas" id="cv3" ref="canv3" :width="width" :height="height"></canvas>
 </template>
 
 
@@ -62,7 +62,7 @@ export default {
 
     this.flame_weight = this.width*this.flame_weight_ratio //ボタンの枠の太さ
 
-    this.nbw = this.width*0.6;
+    this.nbw = this.width;
     this.nbh = this.height;
  
     
