@@ -81,7 +81,7 @@ export default {
     this.gradient3_b.addColorStop(0.5 , 'rgba(0,50,255,0.125)');
     this.gradient3_b.addColorStop(1.0 , 'rgba(0,50,255,0.25)');
     this.context3.fillStyle = this.gradient3_b;
-    this.context3.fillRect(0,0,this.width*0.6,this.height);
+    this.context3.fillRect(0,0,this.nbw,this.nbh);
 
   
     
