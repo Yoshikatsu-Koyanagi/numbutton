@@ -8,7 +8,7 @@
       :width = 500
       :height = 300
       :number = 5 //表示する数字
-      @numclick="nmu"></mycomp> //@numclick: ボタンが押されたら発火
+      @numclick="num"></mycomp> //@numclick: ボタンが押されたら発火
 </div>
   ````
   
