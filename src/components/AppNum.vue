@@ -12,11 +12,9 @@
 
 <script>
 export default { 
-  props: ["width","height","min","max","initial"],
+  props: ["width","height","min","max","initial","number"],
   data() {
     return {
-      amount: 0, //個数
-
       num_width_ratio: 0.8,
       num_height_ratio: 0.5,
       flame_weight_ratio: 0.01, //キャンバスの横幅に対するボタンの枠の太さの割合
@@ -50,7 +48,7 @@ export default {
       this.context3.font = this.font;
       this.context3.fillStyle = "rgba(0,0,0,1)";
       this.context3.textAlign = "center";
-      this.context3.fillText(this.amount, this.nbw*0.5, this.num_top_margin+this.num_height*0.8,this.num_width);
+      this.context3.fillText(this.number, this.nbw*0.5, this.num_top_margin+this.num_height*0.8,this.num_width);
     
       this.context3.lineWidth = this.flame_weight;	
       this.context3.strokeStyle = "rgb(0,0,0)"; 
@@ -58,8 +56,6 @@ export default {
     },
   },
   mounted() {
-    this.amount = this.initial
-
     this.flame_weight = this.width*this.flame_weight_ratio //ボタンの枠の太さ
 
     this.nbw = this.width;
