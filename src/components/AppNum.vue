@@ -12,7 +12,7 @@
 
 <script>
 export default { 
-  props: ["width","height","min","max","initial","number"],
+  props: ["width","height","number"],
   data() {
     return {
       num_width_ratio: 0.8,
